@@ -3,7 +3,7 @@
 #include "point3d.h"
 #include "color.h"
 
-class weird_light
+class weird_light : public light
 {
 public:
 	color calculate_color(const point3d &p_position, const point3d &p_normal) const;
