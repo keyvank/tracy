@@ -8,7 +8,7 @@
 #include "shader.h"
 #include "mesh.h"
 
-renderer::renderer(std::shared_ptr<render_target> p_target, std::shared_ptr<shader> p_shader) :m_target(p_target), m_shader(p_shader), m_buffer(new buffer(p_target->width, p_target->height)){
+renderer::renderer(std::shared_ptr<render_target> p_target, std::shared_ptr<shader> p_shader) :m_target(p_target), m_shader(p_shader), m_buffer(new buffer(p_target->width, p_target->height)),m_backface_culling_enabled(true){
 }
 
 void renderer::clear(const color &p_bg_color){
