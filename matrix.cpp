@@ -1,6 +1,7 @@
 #include "matrix.h"
 #include <algorithm>
 #include <iostream>
+#include <cmath>
 #include <initializer_list>
 #include "point3d.h"
 
