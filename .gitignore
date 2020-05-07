@@ -1,2 +1,3 @@
 *.o
-./tracy
+tracy
+files/output.bmp
